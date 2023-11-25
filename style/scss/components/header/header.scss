@@ -1,0 +1,103 @@
+.header{
+  background-image: $header_image;
+  height: 800px;
+  display: $display-flex;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font: 100% $font-stack;
+  &__container{
+    max-width: $container-max-width;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &__content{
+    display: $display-flex;
+    padding: 15px;
+  }
+  &__info{
+    align-items: center;
+    width: 50%;
+    display: $display-flex;
+  }
+  &__img{
+    background-image: $header_logo;
+    height: 38px;
+    width: 129px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &__nav{
+    width: 50%;
+  }
+  &__ul{
+    justify-content: right;
+    display: $display-flex;
+    gap: 30px;
+  }
+  &__li {
+    color: $color_header_li;
+    text-decoration: none;
+    transition: 0.3s;
+    width: 114px;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    display: $display-flex;
+
+    &:hover {
+      background: $color_header_li_hover;
+      border-radius: 7px;
+      transition: 0.3s;
+    }
+  }
+  &__menu{
+    display: $display-flex;
+    flex-direction: column;
+    gap: 20px;
+    & h1{
+      color: $color_header_menu_h1;
+      font-size: $font_header_menu_h1;
+      width: 590px;
+    }
+    & p{
+      color: $color_header_menu_p;
+      width: $width_header_menu_p;
+    }
+    & a{
+      text-decoration: none;
+      color: $color_header_menu_a;
+    }
+  }
+  &__submit{
+    background-color: $color_header_submit;
+    border-radius: 7px;
+    transition: 0.3s;
+    padding: 7px 27px;
+    border: none;
+    color: $color_header_menu_h1;
+    &:hover{
+      background: $color_header_menu_hover;
+      border-radius: 7px;
+      transition: 0.3s;
+    }
+  }
+  &__select{
+    display: $display-flex;
+    gap: 20px;
+    align-items: center;
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 364px;
+    height: 138px;
+    background-image: $header_dot;
+    position: absolute;
+    left: 965px;
+    top: 725px;
+  }
+}

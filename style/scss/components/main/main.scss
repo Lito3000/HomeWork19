@@ -1,0 +1,72 @@
+.main{
+  font: 100% $font-stack;
+  //display: $display-flex;
+  //flex-wrap: wrap;
+  padding-top: 100px;
+  &__container{
+    max-width: $container-max-width;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &__menu{
+    display: $display-flex;
+    gap: 30px;
+    & p{
+      width: $width_header_menu_p;
+    }
+  }
+  &__info{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    & a{
+      text-decoration: none;
+      color: #0d98fd;
+    }
+    & h1{
+      font-size: 45px;
+    }
+  }
+  &__img{
+    width: 40%;
+    background-image: $main_img;
+    height: 366px;
+
+    display: $display-flex;
+  }
+  &__contact{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    & p{
+      width: 185px;
+    }
+
+  }
+  &__number{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    align-items: center;
+  }
+  &__ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    & li{
+      display: flex;
+    }
+    & a{
+      text-decoration: none;
+      color: #646464;
+    }
+  }
+  &__li{
+    display: flex;
+    width: 127px;
+  }
+}
