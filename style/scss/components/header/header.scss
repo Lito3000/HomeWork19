@@ -73,15 +73,17 @@
     }
   }
   &__submit{
-    background-color: $color_header_submit;
-    border-radius: 7px;
+    background-color: $color_header_menu_hover;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     transition: 0.3s;
     padding: 7px 27px;
     border: none;
     color: $color_header_menu_h1;
     &:hover{
-      background: $color_header_menu_hover;
-      border-radius: 7px;
+      background: blue;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
       transition: 0.3s;
     }
   }

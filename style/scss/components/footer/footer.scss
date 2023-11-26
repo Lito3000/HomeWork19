@@ -1,0 +1,59 @@
+.footer{
+  background-color: $footer_main;
+  font: 100% Poppins300Normal, sans-serif;
+  height: 358px;
+  &__pictures{
+    background-image: $footer_pictures;
+    width: 30px;
+    height: 30px;
+  }
+  &__email{
+    padding-top: 96px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    & a{
+      text-decoration: none;
+    }
+  }
+  &__menu{
+    display: flex;
+    gap: 30px;
+  }
+  &__container{
+    max-width: $container-max-width;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &__left{
+    width: 50%;
+    height: 358px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    & p{
+      color: rgba(243, 243, 249, 0.76);
+    }
+  }
+  &__right{
+    width: 50%;
+    height: 358px;
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    align-items: center;
+    & p{
+      color: white;
+    }
+  }
+  &__img{
+    background-image: $header_logo;
+    height: 38px;
+    width: 129px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
